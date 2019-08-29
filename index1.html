@@ -16,15 +16,15 @@
 <div class="text-center">
     <!-- Button HTML (to Trigger Modal) -->
     <div class="login-btn">
-        <a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+        <a href="#myModal-Login" class="trigger-btn" data-toggle="modal">Login</a>
     </div>
     <div class="signup-btn">
-        <a href="#myModal-signup" class="trigger-btn" data-toggle="modal">Sign Up</a>
+        <a href="#myModal-Signup" class="trigger-btn" data-toggle="modal">Sign Up</a>
     </div>
 </div>
 
 <!-- Modal HTML for Login form -->
-<div id="myModal" class="modal fade">
+<div id="myModal-Login" class="modal fade">
     <div class="modal-dialog modal-login">
         <div class="modal-content">
             <form action="/examples/actions/confirmation.php" method="post">
@@ -35,11 +35,11 @@
                 <div class="modal-body">				
                     <div class="form-group">
                         <label>Username</label>&nbsp;
-                        <i class="far fa-user"></i><input type="text" class="form-control" required="required" placeholder="First Name">
+                        <i class="far fa-user"></i><input type="text" class="form-control" required="required" >
                     </div>
                     <div class="form-group">
                         <div class="clearfix">
-                            <label>Password</label>&nbsp;<i class="fas fa-key"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>Password</label>&nbsp;<i class="fas fa-key"></i>
                             <a href="#" class="pull-right text-muted"><small>Forgot Password?</small></a>
                         </div> 
                         <input type="password" class="form-control" required="required">
@@ -54,7 +54,7 @@
     </div>
 </div>
 <!-- This is for registration -->
-<div id="myModal-signup" class="modal fade">
+<div id="myModal-Signup" class="modal fade">
         <div class="modal-dialog modal-login">
             <div class="modal-content">
                 <form action="/examples/actions/confirmation.php" method="post">
@@ -64,32 +64,26 @@
                     </div>
                     <div class="modal-body">				
                         <div class="form-group">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" required="required">
+                            <input type="text" class="form-control" required="required" placeholder="First Name">
                         </div>
                         <div class="form-group">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" required="required">
+                            <input type="text" class="form-control" required="required" placeholder="Last Name">
                         </div>
                         <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" class="form-control" required="required">
+                            <input type="text" class="form-control" required="required" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="text" class="form-control" required="required">
+                            <input type="email" class="form-control" required="required" placeholder="Enter Email" pattern="@gmail.com">
                         </div>
                         <div class="form-group">
                             <div class="clearfix">
-                                <label>Password</label>
                             </div> 
-                            <input type="password" class="form-control" required="required">
+                            <input type="password" class="form-control" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required="required">
                         </div>
                         <div class="form-group">
                             <div class="clearfix">
-                                <label>Confirm Password</label>
                             </div> 
-                            <input type="password" class="form-control" required="required">
+                            <input type="password" class="form-control" placeholder="Confirm Password" required="required">
                         </div>
                     </div>
                     <div class="modal-footer">

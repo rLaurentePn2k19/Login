@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(".modal-login").css("width","320px");
     $(".modal-content").css({"border-radius":"1px","border":"none"});
     $(".modal-header").css({"position":"relative","justify-content":"center","background":"#f2f2f2"});
-    $(".modal-footer").css("background","#ff8080");
+    $(".modal-footer").css("background","#f2f2f2");
     $("label").css({"font-weight":"normal","font-size":"13px"});
     $(".form-control").css({"min-weight":"38px","border-radius":"20px"});
     $(".btn").css({"min-weight":"38px","border-radius":"20px","min-width":"100px","background":"#3498db","line-height":"normal"});
