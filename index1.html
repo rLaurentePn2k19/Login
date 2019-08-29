@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Simple Modal Login Modal Form</title>
+<link href="index1.css" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script defer src="./node_modules/fontawesome-free-5.10.2-web/js/all.js"></script>
+<script src="index1.js"></script>
+</head>
+<body>
+<div class="text-center">
+    <!-- Button HTML (to Trigger Modal) -->
+    <div class="login-btn">
+        <a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+    </div>
+    <div class="signup-btn">
+        <a href="#myModal-signup" class="trigger-btn" data-toggle="modal">Sign Up</a>
+    </div>
+</div>
+
+<!-- Modal HTML for Login form -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <div class="modal-header">				
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">				
+                    <div class="form-group">
+                        <label>Username</label>&nbsp;
+                        <i class="far fa-user"></i><input type="text" class="form-control" required="required" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <div class="clearfix">
+                            <label>Password</label>&nbsp;<i class="fas fa-key"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="pull-right text-muted"><small>Forgot Password?</small></a>
+                        </div> 
+                        <input type="password" class="form-control" required="required">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <label class="checkbox-inline pull-left"><input type="checkbox">Remember me</label>
+                    <input type="submit" class="btn btn-primary pull-right" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- This is for registration -->
+<div id="myModal-signup" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="modal-header">				
+                        <h4 class="modal-title">Sign Up</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">				
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                                <label>Password</label>
+                            </div> 
+                            <input type="password" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                                <label>Confirm Password</label>
+                            </div> 
+                            <input type="password" class="form-control" required="required">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary pull-right" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>                                		                     
