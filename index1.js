@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("body").css("font-family","Varela Round");
+    $("body").css({"font-family":"Varela Round","height":"100%"});
     $("h4").css({"text-align":"center","font-size":"26px"});
     $(".modal-body").css("padding","30px");
     $(".modal-login").css("width","320px");
@@ -16,5 +16,9 @@ $(document).ready(function(){
     $(".trigger-btn").css({"display":"inline-block","margin":"100px auto"});
     $("btn:hover").css("background","#248bd0");
     $("btn:focus").css("background","#248bd0");
+    // $(".btn_login").css({"border":"solid red","padding":"0px","padding-top":"0px","padding-right":"0px","padding-bottom":"0px","padding-left":"0px"});
+    $(".modal_login").css("margin-top","10px")
+    $(".modal_signup").css({"margin-top":"10px","border-radius":"-5px"})
+    // $(".modal_login").css({"background":"white","border":"solid yellow","padding-right":"-10px"});  
 });
     

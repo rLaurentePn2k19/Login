@@ -9,19 +9,26 @@
 <link rel="stylesheet" href="bootstrap.min.css">
 <script src="jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
-<script defer src="./node_modules/fontawesome-free-5.10.2-web/js/all.js"></script>
+<!-- <script defer src="./node_modules/fontawesome-free-5.10.2-web/js/all.js"></script> -->
 <script src="index1.js"></script>
 </head>
 <body>
-<div class="text-center">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">MyFirstApp</a>
+    <div class="modal_signup">
+        <a href="#myModal-Signup" class="btn btn-primary pull-right" data-toggle="modal">Sign Up</a>
+    </div>
+    <div class="modal_login">
+        <a href="#myModal-Login" class="btn btn-primary pull-right" data-toggle="modal">Login</a>
+    </div>
+    
+</nav>
+<!-- <div class="text-center"> -->
     <!-- Button HTML (to Trigger Modal) -->
-    <div class="login-btn">
-        <a href="#myModal-Login" class="trigger-btn" data-toggle="modal">Login</a>
-    </div>
-    <div class="signup-btn">
-        <a href="#myModal-Signup" class="trigger-btn" data-toggle="modal">Sign Up</a>
-    </div>
-</div>
+    
+ 
+<!-- </div> -->
 
 <!-- Modal HTML for Login form -->
 <div id="myModal-Login" class="modal fade">
