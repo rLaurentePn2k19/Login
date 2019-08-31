@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("body").css({"font-family":"Varela Round","height":"100%"});
+    $("body").css("height","100%");
     $("h4").css({"text-align":"center","font-size":"26px"});
     $(".modal-body").css("padding","30px");
     $(".modal-login").css("width","320px");
@@ -7,8 +7,8 @@ $(document).ready(function(){
     $(".modal-header").css({"position":"relative","justify-content":"center","background":"#f2f2f2"});
     $(".modal-footer").css("background","#f2f2f2");
     $("label").css({"font-weight":"normal","font-size":"13px"});
-    $(".form-control").css({"min-weight":"38px","border-radius":"20px"});
-    $(".btn").css({"min-weight":"38px","border-radius":"20px","min-width":"100px","background":"#3498db","line-height":"normal"});
+    $(".form-control").css({"min-weight":"38px","border-radius":"0px"});
+    // $(".btn").css({"min-weight":"38px","border-radius":"0px","min-width":"100px","background":"#3498db","line-height":"normal"});
     $(".hint-text").css("text-align","center");
     $(".close").css({"position":"absolute","top":"15px","right":"15px"});
     $(".checkbox-inline").css("margin-top","12px");
@@ -16,9 +16,8 @@ $(document).ready(function(){
     $(".trigger-btn").css({"display":"inline-block","margin":"100px auto"});
     $("btn:hover").css("background","#248bd0");
     $("btn:focus").css("background","#248bd0");
-    // $(".btn_login").css({"border":"solid red","padding":"0px","padding-top":"0px","padding-right":"0px","padding-bottom":"0px","padding-left":"0px"});
-    $(".modal_login").css("margin-top","10px")
-    $(".modal_signup").css({"margin-top":"10px","border-radius":"-5px"})
-    // $(".modal_login").css({"background":"white","border":"solid yellow","padding-right":"-10px"});  
+    $(".modal_signup").css({"border-radius":"0px"});
+    $("#forgot_pass").css("margin-left","35%");
+    $("#remember").css("margin-right","37%");
 });
     
